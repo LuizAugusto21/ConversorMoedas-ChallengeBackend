@@ -32,6 +32,7 @@ public class ConexaoApiController {
         JsonParser jp = new JsonParser();
         JsonElement root = jp.parse(new InputStreamReader((InputStream) this.request.getContent()));
         JsonObject Objetojson = root.getAsJsonObject();
+
         return Objetojson;
     }
 
